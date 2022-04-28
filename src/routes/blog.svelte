@@ -26,7 +26,7 @@
 		{#each posts as item}
 			<div class="post">
 				<h2>{item.title.substring(0, 30)}</h2>
-				<p>{item.body.substring(0, 80)}</p>
+				<p>{item.body.substring(0, 80)}...</p>
 				<p class="link"><a href={`/blog/${item.id}`}>Read More</a></p>
 			</div>
 		{/each}
