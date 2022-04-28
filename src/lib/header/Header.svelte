@@ -1,13 +1,12 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import logo from './svelte-logo.svg';
 </script>
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
+		<!-- <a href="https://kit.svelte.dev">
 			<img src={logo} alt="SvelteKit" />
-		</a>
+		</a> -->
 	</div>
 
 	<nav>
@@ -19,8 +18,8 @@
 			<li class:active={$page.url.pathname === '/about'}>
 				<a sveltekit:prefetch href="/about">About</a>
 			</li>
-			<li class:active={$page.url.pathname === '/todos'}>
-				<a sveltekit:prefetch href="/todos">Todos</a>
+			<li class:active={$page.url.pathname === '/blog'}>
+				<a sveltekit:prefetch href="/blog">blog</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -44,7 +43,7 @@
 		height: 3em;
 	}
 
-	.corner a {
+	/* .corner a {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -56,12 +55,12 @@
 		width: 2em;
 		height: 2em;
 		object-fit: contain;
-	}
+	} */
 
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
+		--background: rgba(255, 255, 255, 0.15);
 	}
 
 	svg {

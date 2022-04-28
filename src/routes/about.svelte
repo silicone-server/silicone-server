@@ -16,7 +16,7 @@
 
 <svelte:head>
 	<title>About</title>
-	<meta name="description" content="About this app" />
+	<meta name="description" content="About this server" />
 </svelte:head>
 
 <div class="content">
