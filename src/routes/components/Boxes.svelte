@@ -4,15 +4,15 @@
 <box>
 	<div class="box">
 		Have fun with your friends in Sandbox!<br>
-		<img src="./images/screenshots/1.png" alt="toxopid factory" width="75%" />
+		<img src="./images/screenshots/1.png" alt="toxopid factory" width="95%" />
 	</div>
 	<div class="box">
 		Friendly community!<br>
-		<img src="./images/screenshots/2.png" alt="toxopid factory" width="75%" />
+		<img src="./images/screenshots/2.png" alt="toxopid factory" width="95%" />
 	</div>
 	<div class="box">
         Great battles in PvP!<br>
-        <img src="./images/screenshots/3.png" alt="toxopid factory" width="75%" />
+        <img src="./images/screenshots/3.png" alt="toxopid factory" width="95%" />
     </div>
 </box>
 

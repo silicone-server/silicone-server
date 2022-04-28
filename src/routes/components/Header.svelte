@@ -1,6 +1,6 @@
 <header>
 	<h1>
-		<img src="/images/silicon.png" alt="silicone-server.xyz logo">
+		<img src="./images/silicon.png" alt="silicone-server.xyz logo">
 	</h1>
 </header>
 
