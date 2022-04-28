@@ -1,4 +1,10 @@
+<script>
+	import Socials from "./Socials.svelte";
+</script>
+
 <footer>
+	<Socials/>
+	
 	<h3 class="title">
 		silicone-server.xyz
 	</h3>
