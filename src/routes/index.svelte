@@ -1,8 +1,8 @@
 <script lang="ts">
-	import Header from "./components/Header.svelte";
-	import Connect from "./components/Connect.svelte";
-	import Socials from "./components/Socials.svelte";
-	import Boxes from "./components/Boxes.svelte";
+	import Header from "../lib/components/Header.svelte";
+	import Connect from "../lib/components/Connect.svelte";
+	import Socials from "../lib/components/Socials.svelte";
+	import Boxes from "../lib/components/Boxes.svelte";
 </script>
 
 <main>
