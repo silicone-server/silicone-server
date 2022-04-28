@@ -28,6 +28,23 @@ export let body: any;
 export let id: any;
 </script>
 
+<svelte:head>
+	<title>{title} [#{id}]</title>
+
+	<!-- Meta properties for embed -->
+	<meta property="og:title" content="{title} [#{id}]">
+	<meta property="og:description" content="{body.substring(0, 80)}...">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://silicone-server.xyz/post/${id}">
+	<meta property="og:image" content="favicon.png">
+
+	<!-- Twitter embeds -->
+	<meta property="twitter:card" content="summary">
+	<meta property="twitter:title" content="{title} [#{id}]">
+	<meta property="twitter:description" content="{body.substring(0, 80)}...">
+	<meta property="twitter:image:src" content="./favicon.png">
+</svelte:head>
+
 <main>
 	<h1>{title} [#{id}]</h1>
 	<p><span style="white-space: pre-line">{body}</span></p>
