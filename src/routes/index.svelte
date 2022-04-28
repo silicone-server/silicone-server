@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Header from "./components/Header.svelte";
-	import Footer from "./components/Footer.svelte";
 	import Connect from "./components/Connect.svelte";
 	import Socials from "./components/Socials.svelte";
 	import Boxes from "./components/Boxes.svelte";
@@ -14,7 +13,6 @@
 
 	<Boxes />
 	<Socials/>
-	<Footer/>
 </main>
 
 <style>
