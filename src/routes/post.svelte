@@ -13,7 +13,7 @@
         } catch (err) {
             console.error(err)
         }
-    
+
     }
 </script>
 
@@ -27,7 +27,7 @@
 	<div class="posts">
 		{#each posts as item}
 			<div class="post">
-				<h2>{item.title.substring(0, 30)} [#{item.id}]</h2>
+				<h2><a class="link" href={`/post${item.id}`}>{item.title.substring(0, 30)} [#{item.id}]</a></h2>
 				<p>{item.body.substring(0, 80)}...</p>
 				<p class="link"><a href={`/post/${item.id}`}>Read More</a></p>
 			</div>
