@@ -1,11 +1,13 @@
 <script context="module" lang="ts">
     export async function load({fetch}: {fetch: any}) {
         try {
-            const res = await fetch(`http://jsonplaceholder.typicode.com/posts`);
+            const res = await fetch(`https://raw.githubusercontent.com/silicone-server/dgc/main/blog.json`);
             const json = await res.json();
+			console.log(json["posts"]);
+
             return {
                 props: {
-                    posts: json,
+                    posts: json["posts"],
                 }
             }
         } catch (err) {
@@ -16,7 +18,7 @@
 </script>
 
 <script lang="ts">
-  export let posts: any;
+  export let posts: any[];
 </script>
 
 <main>
@@ -25,7 +27,7 @@
 	<div class="posts">
 		{#each posts as item}
 			<div class="post">
-				<h2>{item.title.substring(0, 30)}</h2>
+				<h2>{item.title.substring(0, 30)} [#{item.id}]</h2>
 				<p>{item.body.substring(0, 80)}...</p>
 				<p class="link"><a href={`/post/${item.id}`}>Read More</a></p>
 			</div>
