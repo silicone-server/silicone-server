@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Header from "../lib/components/Header.svelte";
 	import Connect from "../lib/components/Connect.svelte";
-	import Socials from "../lib/components/Socials.svelte";
 	import Boxes from "../lib/components/Boxes.svelte";
 </script>
 
@@ -12,7 +11,6 @@
 	<p><strong>silicon-server.xyz: </strong>A little <a href="https://anuke.itch.io/mindustry">Mindustry</a> server</p><br>
 
 	<Boxes />
-	<Socials/>
 </main>
 
 <style>
