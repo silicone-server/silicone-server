@@ -31,7 +31,7 @@
 			</div>
 		{/each}
 	</div>
-    {JSON.stringify(posts)}
+	<p><em>hmm, looks like you've reached the end. how odd.<br>oh well. ¯\_(ツ)_/¯</em></p>
 </main>
 
 <style>
