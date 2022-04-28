@@ -1,60 +1,43 @@
-<script context="module" lang="ts">
-	export const prerender = true;
-</script>
-
 <script lang="ts">
-	import Counter from '$lib/Counter.svelte';
+	import Header from "./components/Header.svelte";
+	import Footer from "./components/Footer.svelte";
+	import Connect from "./components/Connect.svelte";
+	import Socials from "./components/Socials.svelte";
+	import Boxes from "./components/Boxes.svelte";
 </script>
 
-<svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
-</svelte:head>
+<main>
+	<Header/>
+	<Connect/>
+	<h1>silicone-server.xyz</h1>
+	<p><strong>silicon-server.xyz: </strong>A little <a href="https://anuke.itch.io/mindustry">Mindustry</a> server</p><br>
 
-<section>
-	<h1>
-		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</div>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
+	<Boxes />
+	<Socials/>
+	<Footer/>
+</main>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
+	:global(body) {
+		background-color: #111;
+		color: #eee;
 	}
-
+	main {
+		text-align: center;
+		padding: 1em;
+		margin: 40px auto;
+		max-width: none;
+		background-color: #222;
+	}
 	h1 {
-		width: 100%;
+		color: #ccc;
+		text-transform: uppercase;
+		font-size: 4em;
+		font-weight: 100;
 	}
-
-	.welcome {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+	@media (min-width: 640px) {
+		main {
+			max-width: 50%;
+		}
 	}
 </style>
