@@ -10,7 +10,7 @@
 	</h3>
 
 	<p class="copyright">
-		© 2022-2022 eclips_e#0001. All Rights Reserved. <br>
+		© 2022-2022 eclips_e#0001 All Rights Reserved. <br>
 		I do not own the rights to Mindustry. <br>
 		No copyright infringement intended.
 	</p>
