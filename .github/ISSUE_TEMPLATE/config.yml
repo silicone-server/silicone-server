@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions
+    url: https://silicone-server.xyz/discord
+    about: Do not ask questions here in the issues tab, but instead in the Discord.
